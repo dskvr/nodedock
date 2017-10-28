@@ -9,4 +9,4 @@ RUN npm install -g nodemon
 # COPY . /opt/app
 
 EXPOSE 3000
-CMD [ "nodemon", "-L", "/opt/app/bin/www" ]
+CMD [ "nodemon", "-L", "/opt/app/bin/index" ]
