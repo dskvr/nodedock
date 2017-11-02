@@ -6,7 +6,7 @@ ENV NPM_CONFIG_LOGLEVEL warn
 RUN npm install
 RUN npm install -g nodemon
 
-# COPY . /opt/app
+COPY . /opt/app
 
 EXPOSE 3000
 CMD [ "nodemon", "-L", "/opt/app/bin/boot" ]
